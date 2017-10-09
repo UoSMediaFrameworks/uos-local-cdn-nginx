@@ -1,0 +1,26 @@
+apps:
+  - script: ~/uos-asset-store-legacy/app.js
+    env:
+      HUB_MONGO: 'mongodb://127.0.0.1:27017/mediahubdev'
+      PORT: 3000
+      HUB_SECRET: '$2a$10$vt2TBymKZTKxMz/Z8J6g5OgtG2IslI8A2tGiEO0jYlfZ1XlAxTOsG'
+      HUB_SECRET_1: ''
+      HUB_SECRET_2: ''
+      HUB_SECRET_101: ''
+      HUB_SECRET_102: ''
+      HUB_SECRET_103: ''
+      HUB_SECRET_104: ''
+      HUB_SECRET_105: ''
+      HUB_SECRET_106: ''
+      HUB_SECRET_107: ''
+      HUB_SECRET_108: ''
+      HUB_SECRET_109: ''
+      HUB_SECRET_110: ''
+  - script: ~/uos-media-hub-legacy/app.js
+    env:
+      MONGO_CONNECTION: 'mongodb://127.0.0.1:27017/mediahubdev'
+      PORT: 4000
+      LOCAL_CDN_HOST: 'http://mediaframework'
+      LOCAL_CDN_PORT: 8890
+      LOCAL_CDN_ROOT_FOLDER: '/var/cdn'
+  - script: ~/uos-media-playback-framework-legacy/app.js
