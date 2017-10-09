@@ -28,4 +28,5 @@ apps:
   - script: ~/uos-media-playback-framework-legacy/app.js
     name: 'react-app'
     env:
-      DIST: '~/uos-media-playback-framework-legacy/dist'
+      DIST: 'dist'
+      PORT: 5000
