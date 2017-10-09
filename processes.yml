@@ -1,5 +1,6 @@
 apps:
   - script: ~/uos-asset-store-legacy/app.js
+    name: 'asset-store'
     env:
       HUB_MONGO: 'mongodb://127.0.0.1:27017/mediahubdev'
       PORT: 3000
@@ -17,6 +18,7 @@ apps:
       HUB_SECRET_109: ''
       HUB_SECRET_110: ''
   - script: ~/uos-media-hub-legacy/app.js
+    name: 'media-hub'
     env:
       MONGO_CONNECTION: 'mongodb://127.0.0.1:27017/mediahubdev'
       PORT: 4000
@@ -24,3 +26,4 @@ apps:
       LOCAL_CDN_PORT: 8890
       LOCAL_CDN_ROOT_FOLDER: '/var/cdn'
   - script: ~/uos-media-playback-framework-legacy/app.js
+    name: 'react-app'
