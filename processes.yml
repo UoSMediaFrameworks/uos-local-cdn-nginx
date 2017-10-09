@@ -27,3 +27,5 @@ apps:
       LOCAL_CDN_ROOT_FOLDER: '/var/cdn'
   - script: ~/uos-media-playback-framework-legacy/app.js
     name: 'react-app'
+    env:
+      DIST: '~/uos-media-playback-framework-legacy/dist'
